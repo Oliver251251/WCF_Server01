@@ -7,6 +7,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using Service.Controllers;
+using Service.DTO;
 
 namespace Service
 {
@@ -112,6 +113,23 @@ namespace Service
         public string JogosultsagokTorol_Web(int Id)
         {
             return FelhasznaloTorol_CS(Id);
+        }
+
+        //DTO
+        public List<FelhasznalokNevEmail> FelhasznalokNevEmail_CS()
+        {
+            return new FelhasznalokNevEmail().Levalogatas();
+        }
+
+        //Login
+        public string GetSalt_CS(string loginNev)
+        {
+            return new LoginController().GetSalt(loginNev);
+        }
+
+        public string Login_CS(Login login)
+        {
+            return new LoginController().Login(login);
         }
     }
 }

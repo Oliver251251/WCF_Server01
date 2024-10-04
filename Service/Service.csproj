@@ -117,14 +117,19 @@
   <ItemGroup>
     <Compile Include="Controllers\FelhasznalokController.cs" />
     <Compile Include="Controllers\JogosultsagokController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="DataBaseManager\BaseDatabaseManager.cs" />
     <Compile Include="DataBaseManager\IDML.cs" />
     <Compile Include="DataBaseManager\IDQL.cs" />
     <Compile Include="DataBaseManager\ISQL.cs" />
+    <Compile Include="DTO\FelhasznalokNevEmail.cs" />
+    <Compile Include="Interfaces\IDTOs.cs" />
     <Compile Include="Interfaces\IFelhasznalok.cs" />
     <Compile Include="Interfaces\IJogosultsagok.cs" />
+    <Compile Include="Interfaces\ILogin.cs" />
     <Compile Include="Models\Felhasznalok.cs" />
     <Compile Include="Models\Jogosultsagok.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Record.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
